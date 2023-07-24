@@ -11,8 +11,8 @@ class Project(models.Model):
         User,
         related_name="projects",
         on_delete=models.CASCADE,
-        null=True
+        null=True,
     )
 
     def __str__(self):
-        return self.vendor
+        return self.name
