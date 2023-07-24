@@ -10,4 +10,4 @@ def view_projects(request):
     context = {
         "projects": projects
     }
-    return render(request, "projects/listview.html", context)
+    return render(request, "projects/list_projects.html", context)
