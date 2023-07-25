@@ -20,7 +20,7 @@ from django.shortcuts import redirect
 
 # redirect to projects/views.py to the view that will list all projects
 def redirect_to_home(request):
-    return redirect("view_projects")
+    return redirect("list_projects")
 
 
 urlpatterns = [
