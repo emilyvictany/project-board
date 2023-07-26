@@ -45,10 +45,7 @@ def user_signup(request):
             password_confirmation = form.cleaned_data["password_confirmation"]
 
             if password == password_confirmation:
-                user = User.objects.create_user(
-                    username,
-                    password=password
-                )
+                user = User.objects.create_user(username, password=password)
 
                 login(request, user)
                 return redirect("list_projects")
